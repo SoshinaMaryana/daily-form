@@ -27,12 +27,12 @@ body{
 	display: inline-block;
 	height: 30px;
 }
-.container__logo{
+.container__logo a{
 	transition: opacity .25s;
 }
-.container__logo:hover,
-.container__logo:focus,
-.container__logo:active {
+.container__logo a:hover,
+.container__logo a:focus,
+.container__logo a:active {
 	opacity: .7;
 }
 .container__title{
