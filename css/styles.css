@@ -7,9 +7,7 @@ html,body {
 body{
 	color: #7a7b7f;
 	font: 400 12px/1.7 Arial, sans-serif;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center right, center;
+	/*background-position: center right, center;*/
 	background-image: linear-gradient(45deg, #ff512f, #dd2476);
 }
 .container{
@@ -23,26 +21,26 @@ body{
 	padding: 35px;
 	border-radius: 7px;
 }
-.container__logo,
+
 .container__title{
-	display: inline-block;
-	height: 30px;
-}
-.container__logo a{
-	transition: opacity .25s;
-}
-.container__logo a:hover,
-.container__logo a:focus,
-.container__logo a:active {
-	opacity: .7;
-}
-.container__title{
-	margin-left: 10px;
-}
-.container__title h1{
 	margin: 0;
 	color: #1b1c1d;
+	text-align: left;
 }
+.container__title:before{
+	content: '';
+	display: inline-block;
+	height: 25px;
+	width: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/logo.png');
+}
+/*.container__title h1{
+	margin: 0;
+	color: #1b1c1d;
+}*/
 .container__text{
 	font-size: 13px;
 	line-height: 1.5;
@@ -58,7 +56,6 @@ body{
 }
 .form__row{
 	padding-top: 13px;
-	width: 100%;
 }
 .form__row::before,
 .form__row::after{
@@ -77,7 +74,7 @@ body{
 	width: 100%;
 }
 .form__col +.form__col{
-	margin-left: 5%;
+	margin-left: 6%;
 }
 .form__input{
 	display: block;
